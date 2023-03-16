@@ -1,7 +1,7 @@
 def caesar_cipher(input, shift_factor)
-  shift_factor = shift_factor.remainder(26) #so shift factor can be negative, and less than -26
+  shift_factor = shift_factor.remainder(26) #so shift factor can be any positive or negative int
   if shift_factor < 0
-    shift_factor = 26 + shift_factor
+    shift_factor = 26 + shift_factor #convert negative shifts to their positive counterparts
   end
   input.bytes.map{|code| cipher_shift(code, shift_factor)}.map{|code| code.chr}.join
 end
