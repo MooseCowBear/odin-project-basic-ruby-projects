@@ -11,3 +11,7 @@ Takes a string and a list of substrings. Returns a hash containing the number of
 ## Stock Picker
 
 Takes an array of numbers representing stock prices. Returns the indices representing the best days to buy and sell, respectively.
+
+## Bubble Sort
+
+A ruby implementation of bubble sort. 
